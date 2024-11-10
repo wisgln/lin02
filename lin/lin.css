@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #f4f8fb;  
+    margin: 0px;
+}
+
+header {
+    background-color: #4a90e2;  
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+    margin: 0; 
+}
+
+header h1 {
+    font-size: 2.5em;  
+    margin: 0;  
+}
+
+nav{
+    background-color: #ffffff;  
+    font-family: Arial;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;  
+}
+
+nav a{
+    padding: 14px 16px;
+    display: inline-block;
+    color: #333;  
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav a:hover{
+    background-color: #c8d6e5;  
+    color: #4a90e2;  
+}
+
+footer{
+    background-color: #474bbe;  
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.card{
+    padding: 20px;
+    margin: 20px 500px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
+
+main::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@media screen and (max-width:800px) {
+    article, aside{
+        float: none;
+        width: 100%;
+    }
+
+    .card{
+        padding: 10px;
+        margin: 15px 0px;
+    }
+
+    img{
+        max-width: 100%;
+        height:90%;
+    }
+}
+
+.card.card01{
+    text-align: center;
+}
+
+.card .aa img {
+    width: 150px;  
+    height: 150px; 
+    border-radius: 50%; 
+    transition: transform 0.3s ease; 
+}
+
+.card .aa img:hover {
+    transform: scale(1.05); 
+}
+
+h4 {
+    color: #7f8c8d;
+    margin-bottom: 5px;
+    font-size: 0.8em;
+}
+
+.listProgram li .bar {
+    width: 80%; 
+    height: 10px;
+    border: solid 2px #d0d0d0;  
+    border-radius: 5px;
+    position: relative; 
+}
+
+.listProgram li .bar .value {
+    height: 100%;
+    background: #4a90e2;  
+    position: absolute; 
+    left: 0; 
+    top: 0;
+}
+
+.listProgram li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #f4f4f4;  
+}
+
+.listProgram li:last-child {
+    border-bottom: none;
+}
+
+.listProgram li .bar .p30 {
+    width: 30%; 
+}
+
+.listProgram li .bar .p50 {
+    width: 50%; 
+}
+
+.listProgram li .bar .p80 {
+    width: 80%;
+}
+
+.listProgram li .bar .p100 {
+    width: 100%;
+}
+
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+    background-color: #333;
+}
+
+section.card:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.8s ease;
+}
+
+
+.work-image {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.work-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.work-image figcaption {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+.card .work-image img:hover {
+    transform: scale(1.05); 
+}
+
+.life-image {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.life-image img {
+    width: 300px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.life-image figcaption {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+.card .life-image img:hover {
+    transform: scale(1.05); 
+}
+
+.act-image {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.act-image img {
+    width: 300px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.act-image figcaption {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+.card .act-image img:hover {
+    transform: scale(1.05); 
+}
+
+@media screen and (max-width: 600px) {
+    .work-image {
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+}
+    .life-image {
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+}
+    .act-image {
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+}       
+}

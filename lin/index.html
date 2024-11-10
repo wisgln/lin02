@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>個人網頁排版</title>
+    <link rel="stylesheet" href="lin.css">
+  </head>
+  <body>
+    <header>
+      <h1>My Website</h1>
+    </header>
+
+    <nav>
+      <a href="#section6">個人資料</a>
+      <a href="#section1">個人學歷</a>
+      <a href="#section2">程式技能</a>
+      <a href="#section3">語言能力</a>
+      <a href="#section7">生活經歷</a>
+      <a href="#section8">活動經歷</a>
+      <a href="#section4">工作經歷</a>
+      <a href="#section5">聯絡方式</a>
+    </nav>
+
+    <section id="section6" class="card card01">
+      <h2>個人資料</h2>
+      <section><div class="aa"><img src="3.jpg" /></div></section>
+      <p>我是林瑋菘，來自高雄，目前就讀中原大學資訊管理學系，興趣是聽音樂、發呆。</p>
+    </section>
+    
+    <section id="section1" class="card">
+        <div class="right">
+          <div class="block">
+            <h2>學歷</h2>
+            <h4>Education</h4>
+            <ul class="listExperience">
+              <li class="year">2017-2020         
+                  <ul>
+                    <li>高雄市立志中學國中部</li>
+                </ul>
+              </li>
+              <li class="year">2020-2023          
+                <ul>
+                  <li>高雄市立志中學普通高中部</li>
+                </ul>
+              </li>
+              <li class="year">2023-2027          
+                  <ul>
+                    <li>桃園市中原大學資訊管理學系</li>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    
+
+    <section id="section2" class="card">
+      <h2>程式技能</h2>
+      <h4>Programming Skills</h4>
+        <ul class="listProgram">
+          <li>python
+            <div class="bar">
+              <div class="value p80"></div>
+            </div>
+          </li>
+          <li>java  　
+            <div class="bar">
+              <div class="value p30"></div>
+            </div>
+          </li>
+          <li>html　
+            <div class="bar">
+              <div class="value p50"></div>
+            </div>
+          </li>
+          <li>css　　
+            <div class="bar">
+              <div class="value p30"></div>
+            </div>
+          </li>
+        </ul>              
+    </section>
+    
+    <section id="section3" class="card">
+      <h2>語言能力</h2>
+      <h4>Language Ability</h4>
+        <ul class="listProgram">
+          <li>中文　
+            <div class="bar">
+              <div class="value p100"></div>
+            </div>
+          </li>
+          <li>英文　
+            <div class="bar">
+              <div class="value p30"></div>
+            </div>
+          </li>
+          <li>閩南語
+            <div class="bar">
+              <div class="value p50"></div>
+            </div>
+        </ul>              
+    </section>
+
+    <section id="section7" class="card">
+      <h2>生活經歷</h2>
+      <h4>Life Experience</h4>
+
+      <figure class="life-image">
+        <img src="6.jpg" alt="澎湖" />
+        <figcaption>澎湖行</figcaption>
+      </figure>
+
+      <figure class="life-image">
+        <img src="4.jpg" alt="台南" />
+        <figcaption>台南行</figcaption>
+      </figure>
+
+      <figure class="life-image">
+        <img src="5.jpg" alt="吃飯" />
+        <figcaption>多人行</figcaption>
+      </figure>
+    </section>
+
+    <section id="section8" class="card">
+      <h2>活動經歷</h2>
+      <h4>Activity Experience</h4>
+
+      <figure class="act-image">
+        <img src="7.jpg" alt="資識王" />
+        <figcaption>叫我第一名</figcaption>
+      </figure>
+
+      <figure class="act-image">
+        <img src="8.jpg" alt="班聚" />
+        <figcaption>班級聚餐</figcaption>
+      </figure>
+
+      <figure class="act-image">
+        <img src="9.jpg" alt="淨灘" />
+        <figcaption>淨灘</figcaption>
+      </figure>
+    </section>
+
+    <section id="section4" class="card">
+      <h2>工作經歷</h2>
+      <h4>Work Experience</h4>
+    
+      <figure class="work-image">
+        <img src="1.jpg" alt="萊爾富員工" />
+        <figcaption>萊爾富員工</figcaption>
+      </figure>
+    </section>
+
+    <section id="section5" class="card">
+      <h2>聯絡方式</h2>
+      <h4>Media</h4>
+      <p>IG:_wisslnn</p>
+      <p>mail:aa0989788965@gmail.com</p>
+    </section>
+
+    <footer>
+      <h5>@cyim11244227</h5>
+    </footer>
+
+    <button id="scrollTopBtn" onclick="scrollToTop()">▲</button>
+
+    <script>
+      
+    window.onscroll = function() { toggleScrollButton() };
+  
+    function toggleScrollButton() {
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+              scrollTopBtn.style.display = "block";
+        } else {
+              scrollTopBtn.style.display = "none";
+        }
+    }
+  
+    function scrollToTop() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+    </script>
+  
+
+  </body>
+</html>
